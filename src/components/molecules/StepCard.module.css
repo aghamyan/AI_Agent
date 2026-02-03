@@ -1,0 +1,42 @@
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-shadow: 0 12px 24px rgba(15, 16, 24, 0.06);
+  border: 1px solid #eef0f4;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 260px;
+  position: relative;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #111428;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.card h3 {
+  font-size: 17px;
+  color: #151725;
+}
+
+.card p {
+  color: #606575;
+  line-height: 1.6;
+  font-size: 14.5px;
+}

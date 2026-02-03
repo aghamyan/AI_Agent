@@ -1,0 +1,27 @@
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #4d5161;
+  font-weight: 500;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.green {
+  background: #1ecb6f;
+}
+
+.blue {
+  background: #2b6cff;
+}
+
+.purple {
+  background: #8b5cff;
+}

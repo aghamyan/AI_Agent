@@ -1,0 +1,19 @@
+.app {
+  background: #f7f7f9;
+  min-height: 100vh;
+  color: #0c0c13;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-bottom: 96px;
+}
+
+@media (max-width: 768px) {
+  main {
+    gap: 64px;
+    padding-bottom: 80px;
+  }
+}

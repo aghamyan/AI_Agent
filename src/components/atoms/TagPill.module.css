@@ -1,0 +1,16 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #f1f2f5;
+  color: #111321;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #e0e2e8;
+}
+
+.icon {
+  display: inline-flex;
+}
