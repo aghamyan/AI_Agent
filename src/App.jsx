@@ -8,6 +8,36 @@ import HowItWorksSection from './components/sections/HowItWorksSection.jsx';
 import ResultsSection from './components/sections/ResultsSection.jsx';
 import AboutSection from './components/sections/AboutSection.jsx';
 import SignupSection from './components/sections/SignupSection.jsx';
+import AdminDashboardSection from './components/sections/AdminDashboardSection.jsx';
+import TabPlaceholderSection from './components/sections/TabPlaceholderSection.jsx';
+
+const TAB_PLACEHOLDERS = {
+  'Employer Dashboard': {
+    title: 'Employer Dashboard',
+    description:
+      'Track talent pipelines, open requisitions, and team hiring goals with real-time activity summaries.',
+  },
+  'Employee Dashboard': {
+    title: 'Employee Dashboard',
+    description:
+      'Stay on top of interview assignments, feedback requests, and progress tracking in one workspace.',
+  },
+  'Admin Schedule': {
+    title: 'Admin Schedule',
+    description:
+      'Coordinate shared calendars, audits, and approval windows to keep every department in sync.',
+  },
+  'Employer Schedule': {
+    title: 'Employer Schedule',
+    description:
+      'View upcoming interviews, coordinate hiring team availability, and manage recruiting milestones.',
+  },
+  'Employee Schedule': {
+    title: 'Employee Schedule',
+    description:
+      'See your interview agenda, reminders, and prep windows so nothing slips through the cracks.',
+  },
+};
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('Home');
@@ -27,6 +57,14 @@ const App = () => {
           </>
         )}
         {activeTab === 'Signup' && <SignupSection onBack={() => setActiveTab('Home')} />}
+        {activeTab === 'Admin Dashboard' && <AdminDashboardSection />}
+        {TAB_PLACEHOLDERS[activeTab] && (
+          <TabPlaceholderSection
+            title={TAB_PLACEHOLDERS[activeTab].title}
+            description={TAB_PLACEHOLDERS[activeTab].description}
+            onBack={() => setActiveTab('Home')}
+          />
+        )}
       </main>
     </div>
   );
