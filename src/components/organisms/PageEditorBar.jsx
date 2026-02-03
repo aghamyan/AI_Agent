@@ -13,7 +13,7 @@ const TABS = [
   'Employee Schedule',
 ];
 
-const PageEditorBar = () => {
+const PageEditorBar = ({ activeTab, onTabChange }) => {
   return (
     <section className={styles.pageEditor}>
       <Container className={styles.topRow}>
@@ -30,9 +30,10 @@ const PageEditorBar = () => {
             <button
               key={tab}
               type="button"
-              className={`${styles.tab} ${index === 0 ? styles.active : ''}`.trim()}
-              aria-selected={index === 0}
+              className={`${styles.tab} ${tab === activeTab ? styles.active : ''}`.trim()}
+              aria-selected={tab === activeTab}
               role="tab"
+              onClick={() => onTabChange(tab)}
             >
               {tab}
             </button>
