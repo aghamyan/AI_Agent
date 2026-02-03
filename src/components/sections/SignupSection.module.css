@@ -1,0 +1,152 @@
+.section {
+  padding: 96px 0 120px;
+  background: #fafafb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.backLink {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.card {
+  width: min(460px, 100%);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 36px 32px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  text-align: center;
+}
+
+.logoBadge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #0b0b14;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0 auto 16px;
+  letter-spacing: 0.5px;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #f5f5f7;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111827;
+}
+
+.field select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #9ca3af 50%),
+    linear-gradient(135deg, #9ca3af 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(1em + 2px), calc(100% - 12px) calc(1em + 2px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 34px;
+}
+
+.eye {
+  position: absolute;
+  right: 14px;
+  bottom: 12px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.checkbox {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.checkbox input {
+  margin-top: 2px;
+}
+
+.submit {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(90deg, #0b0b14, #111827);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.signInPrompt {
+  text-align: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.signInPrompt strong {
+  color: #111827;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 28px 22px;
+  }
+
+  .backLink {
+    align-self: center;
+  }
+}
