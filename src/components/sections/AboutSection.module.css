@@ -1,0 +1,50 @@
+.section {
+  padding-bottom: 24px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  align-items: center;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(81, 70, 255, 0.12);
+  color: #5146ff;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.content h2 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.content p {
+  margin: 0;
+  color: #5a5b6a;
+  line-height: 1.6;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.panel h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.panel ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #5a5b6a;
+  line-height: 1.7;
+}

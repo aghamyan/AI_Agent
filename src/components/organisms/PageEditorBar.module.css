@@ -1,0 +1,72 @@
+.pageEditor {
+  background: #fbfbfd;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 16px;
+}
+
+.eyebrow {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0c0c13;
+  margin: 0;
+}
+
+.viewAllButton {
+  padding-inline: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.16);
+  color: #0c0c13;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: #f0f0f4;
+  border-radius: 999px;
+  padding: 6px;
+  overflow-x: auto;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4b4b57;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab:focus-visible {
+  outline: 2px solid rgba(80, 70, 255, 0.4);
+  outline-offset: 2px;
+}
+
+.active {
+  background: #ffffff;
+  color: #0c0c13;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 768px) {
+  .topRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+}
