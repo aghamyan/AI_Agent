@@ -9,17 +9,13 @@ import ResultsSection from './components/sections/ResultsSection.jsx';
 import AboutSection from './components/sections/AboutSection.jsx';
 import SignupSection from './components/sections/SignupSection.jsx';
 import TabPlaceholderSection from './components/sections/TabPlaceholderSection.jsx';
+import EmployerDashboardSection from './components/sections/EmployerDashboardSection.jsx';
 
 const TAB_PLACEHOLDERS = {
   'Admin Dashboard': {
     title: 'Admin Dashboard',
     description:
       'Review platform metrics, approve workflows, and keep every team aligned from a single control center.',
-  },
-  'Employer Dashboard': {
-    title: 'Employer Dashboard',
-    description:
-      'Track talent pipelines, open requisitions, and team hiring goals with real-time activity summaries.',
   },
   'Employee Dashboard': {
     title: 'Employee Dashboard',
@@ -46,11 +42,13 @@ const TAB_PLACEHOLDERS = {
 const App = () => {
   const [activeTab, setActiveTab] = useState('Home');
 
+  const isEmployerDashboard = activeTab === 'Employer Dashboard';
+
   return (
     <div className={styles.app}>
       <PageEditorBar activeTab={activeTab} onTabChange={setActiveTab} />
-      <Header />
-      <main>
+      {!isEmployerDashboard && <Header />}
+      <main className={isEmployerDashboard ? styles.dashboardMain : undefined}>
         {activeTab === 'Home' && (
           <>
             <HeroSection />
@@ -61,6 +59,7 @@ const App = () => {
           </>
         )}
         {activeTab === 'Signup' && <SignupSection onBack={() => setActiveTab('Home')} />}
+        {isEmployerDashboard && <EmployerDashboardSection />}
         {TAB_PLACEHOLDERS[activeTab] && (
           <TabPlaceholderSection
             title={TAB_PLACEHOLDERS[activeTab].title}

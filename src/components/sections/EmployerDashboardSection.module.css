@@ -1,0 +1,383 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.topNav {
+  background: #ffffff;
+  border-bottom: 1px solid #e7e7ef;
+}
+
+.topNavInner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.brandMark {
+  align-items: center;
+  background: #0c0c13;
+  border-radius: 12px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 12px;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: 0.6px;
+  width: 32px;
+}
+
+.brandName {
+  font-size: 16px;
+}
+
+.topLinks {
+  display: flex;
+  gap: 24px;
+  color: #6b6b82;
+  font-weight: 600;
+}
+
+.topLinkActive {
+  color: #1b1b26;
+}
+
+.avatar {
+  align-items: center;
+  background: #efeff4;
+  border-radius: 50%;
+  color: #1b1b26;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 600;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 12px;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.headerRow h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.headerRow p {
+  color: #7a7a92;
+  font-weight: 500;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.outlineButton,
+.primaryButton {
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  display: inline-flex;
+  font-weight: 600;
+  gap: 8px;
+  padding: 10px 18px;
+}
+
+.outlineButton {
+  background: #fff;
+  border-color: #e4e4ee;
+  color: #1b1b26;
+}
+
+.primaryButton {
+  background: #0c0c13;
+  color: #fff;
+}
+
+.iconButton {
+  align-items: center;
+  display: inline-flex;
+  height: 18px;
+  width: 18px;
+}
+
+.iconButton svg {
+  height: 100%;
+  width: 100%;
+}
+
+.tabStrip {
+  background: #ededf2;
+  border-radius: 999px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  padding: 6px;
+  text-align: center;
+  font-weight: 600;
+  color: #1f1f2a;
+}
+
+.tab {
+  padding: 10px 12px;
+  border-radius: 999px;
+}
+
+.tabActive {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(20, 20, 40, 0.08);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.statCard {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #eeeef3;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+}
+
+.statLabel {
+  color: #7a7a92;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 6px 0 4px;
+}
+
+.statDelta {
+  font-size: 12px;
+  color: #12a656;
+  font-weight: 600;
+}
+
+.statIcon {
+  align-items: center;
+  border-radius: 12px;
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.statIcon svg {
+  height: 22px;
+  width: 22px;
+}
+
+.iconBlue {
+  color: #2357ff;
+  background: rgba(35, 87, 255, 0.1);
+}
+
+.iconGreen {
+  color: #1da64a;
+  background: rgba(29, 166, 74, 0.12);
+}
+
+.iconPurple {
+  color: #7b38ff;
+  background: rgba(123, 56, 255, 0.12);
+}
+
+.iconOrange {
+  color: #ff6a00;
+  background: rgba(255, 106, 0, 0.12);
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid #eeeef3;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.panelHeader h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.panelHeader p {
+  color: #7a7a92;
+  font-weight: 500;
+}
+
+.applicationList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.applicationCard {
+  align-items: center;
+  border: 1px solid #f0f0f4;
+  border-radius: 14px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto 1fr auto;
+  padding: 12px 14px;
+}
+
+.applicationAvatar {
+  align-items: center;
+  background: #f1f1f6;
+  border-radius: 50%;
+  color: #1f1f2a;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.applicationName {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.applicationRole {
+  color: #7a7a92;
+  font-size: 13px;
+}
+
+.applicationMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.matchTag {
+  background: #e3f8ec;
+  border-radius: 999px;
+  color: #1a9d4b;
+  font-weight: 600;
+  padding: 4px 10px;
+}
+
+.applicationTime {
+  color: #8b8ba3;
+}
+
+.metricList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.metricHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #1f1f2a;
+}
+
+.metricValue {
+  font-weight: 700;
+}
+
+.progressTrack {
+  background: #efeff4;
+  border-radius: 999px;
+  height: 8px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.barGreen {
+  background: #1a9d4b;
+}
+
+.barBlue {
+  background: #2357ff;
+}
+
+.barPurple {
+  background: #7b38ff;
+}
+
+@media (max-width: 1024px) {
+  .headerRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .topNavInner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tabStrip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    border-radius: 20px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .headerActions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+}

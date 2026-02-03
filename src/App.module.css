@@ -11,9 +11,18 @@ main {
   padding-bottom: 96px;
 }
 
+.dashboardMain {
+  gap: 0;
+  padding-bottom: 64px;
+}
+
 @media (max-width: 768px) {
   main {
     gap: 64px;
     padding-bottom: 80px;
+  }
+
+  .dashboardMain {
+    padding-bottom: 56px;
   }
 }
