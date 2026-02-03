@@ -1,0 +1,296 @@
+.section {
+  padding: 32px 0 80px;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #0b0c1d;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.brandName {
+  font-size: 1.05rem;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  color: #6b6b7c;
+}
+
+.navItem {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f1f6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  background: #e7e8ee;
+}
+
+.headerRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.headerRow h1 {
+  margin: 0 0 4px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #6b6b7c;
+}
+
+.scheduleButton {
+  background: #0b0c1d;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.scheduleIcon {
+  display: inline-flex;
+}
+
+.tabRow {
+  background: #f1f2f6;
+  border-radius: 999px;
+  padding: 6px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.tab {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #2d2d3a;
+  cursor: pointer;
+}
+
+.activeTab {
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(15, 23, 42, 0.08);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.metricCard {
+  border: 1px solid #ececf1;
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
+}
+
+.metricLabel {
+  margin: 0 0 6px;
+  color: #6b6b7c;
+  font-weight: 500;
+}
+
+.metricValue {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.metricChange {
+  margin: 0;
+  font-weight: 600;
+}
+
+.metricIcon {
+  font-size: 1.6rem;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.blue {
+  color: #2563eb;
+}
+
+.purple {
+  color: #7c3aed;
+}
+
+.orange {
+  color: #f97316;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.panel {
+  border: 1px solid #ececf1;
+  border-radius: 18px;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.panelHeader h2 {
+  margin: 0 0 4px;
+}
+
+.panelHeader p {
+  margin: 0;
+  color: #6b6b7c;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.listItem {
+  display: flex;
+  gap: 12px;
+  background: #f9f9fb;
+  padding: 12px 14px;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.activityDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.success {
+  background: #22c55e;
+}
+
+.info {
+  background: #3b82f6;
+}
+
+.warning {
+  background: #f59e0b;
+}
+
+.listTitle {
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.listTime {
+  margin: 0;
+  color: #6b6b7c;
+  font-size: 0.85rem;
+}
+
+.alertList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.alertCard {
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  border-left: 4px solid transparent;
+}
+
+.alertCard.warning {
+  background: #fff8e6;
+  border-left-color: #f59e0b;
+}
+
+.alertCard.info {
+  background: #eff6ff;
+  border-left-color: #3b82f6;
+}
+
+.dismissButton {
+  background: none;
+  border: none;
+  color: #1f2937;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .headerRow {
+    flex-direction: column;
+  }
+
+  .tabRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

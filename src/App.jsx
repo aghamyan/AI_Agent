@@ -8,6 +8,7 @@ import HowItWorksSection from './components/sections/HowItWorksSection.jsx';
 import ResultsSection from './components/sections/ResultsSection.jsx';
 import AboutSection from './components/sections/AboutSection.jsx';
 import SignupSection from './components/sections/SignupSection.jsx';
+import AdminDashboardSection from './components/sections/AdminDashboardSection.jsx';
 import TabPlaceholderSection from './components/sections/TabPlaceholderSection.jsx';
 import EmployerDashboardSection from './components/sections/EmployerDashboardSection.jsx';
 
