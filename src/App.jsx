@@ -8,14 +8,10 @@ import HowItWorksSection from './components/sections/HowItWorksSection.jsx';
 import ResultsSection from './components/sections/ResultsSection.jsx';
 import AboutSection from './components/sections/AboutSection.jsx';
 import SignupSection from './components/sections/SignupSection.jsx';
+import AdminDashboardSection from './components/sections/AdminDashboardSection.jsx';
 import TabPlaceholderSection from './components/sections/TabPlaceholderSection.jsx';
 
 const TAB_PLACEHOLDERS = {
-  'Admin Dashboard': {
-    title: 'Admin Dashboard',
-    description:
-      'Review platform metrics, approve workflows, and keep every team aligned from a single control center.',
-  },
   'Employer Dashboard': {
     title: 'Employer Dashboard',
     description:
@@ -61,6 +57,7 @@ const App = () => {
           </>
         )}
         {activeTab === 'Signup' && <SignupSection onBack={() => setActiveTab('Home')} />}
+        {activeTab === 'Admin Dashboard' && <AdminDashboardSection />}
         {TAB_PLACEHOLDERS[activeTab] && (
           <TabPlaceholderSection
             title={TAB_PLACEHOLDERS[activeTab].title}
