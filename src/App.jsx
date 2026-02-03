@@ -8,6 +8,7 @@ import HowItWorksSection from './components/sections/HowItWorksSection.jsx';
 import ResultsSection from './components/sections/ResultsSection.jsx';
 import AboutSection from './components/sections/AboutSection.jsx';
 import SignupSection from './components/sections/SignupSection.jsx';
+import AdminDashboardSection from './components/sections/AdminDashboardSection.jsx';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('Home');
@@ -15,7 +16,7 @@ const App = () => {
   return (
     <div className={styles.app}>
       <PageEditorBar activeTab={activeTab} onTabChange={setActiveTab} />
-      <Header />
+      {activeTab === 'Home' && <Header />}
       <main>
         {activeTab === 'Home' && (
           <>
@@ -27,6 +28,7 @@ const App = () => {
           </>
         )}
         {activeTab === 'Signup' && <SignupSection onBack={() => setActiveTab('Home')} />}
+        {activeTab === 'Admin Dashboard' && <AdminDashboardSection />}
       </main>
     </div>
   );
