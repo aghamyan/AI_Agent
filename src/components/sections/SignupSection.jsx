@@ -1,14 +1,14 @@
 import Container from '../atoms/Container.jsx';
 import styles from './SignupSection.module.css';
 
-const SignupSection = () => {
+const SignupSection = ({ onBack = () => {} }) => {
   return (
     <section id="signup" className={styles.section}>
       <Container className={styles.container}>
-        <a className={styles.backLink} href="#">
+        <button className={styles.backLink} type="button" onClick={onBack}>
           <span aria-hidden="true">←</span>
           Back to Home
-        </a>
+        </button>
         <div className={styles.card}>
           <div className={styles.logoBadge}>AI</div>
           <h2>Join HireAI Armenia</h2>
